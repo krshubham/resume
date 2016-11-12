@@ -1,0 +1,188 @@
+%
+% LaTeX source of my resume
+% =========================
+%
+% Heavily commented to to fit even LaTeX beginners (hopefully).
+%
+% See the `README.md` file for more info.
+%
+% This file is licensed under the CC-NC-ND Creative Commons license.
+%
+
+
+% Start a document with the here given default font size and paper size.
+\documentclass[8pt,a4paper]{article}
+
+% Set the page margins.
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ tmargin=0.3in,
+ lmargin=0.3in,
+ rmargin = 0.5in,
+ bmargin=0.5in
+ }
+
+% Setup the language.
+\usepackage[english]{babel}
+\hyphenation{Some-long-word}
+
+% Makes resume-specific commands available.
+\usepackage{resume}
+
+
+
+
+\begin{document}  % begin the content of the document
+\sloppy  % this to relax whitespacing in favour of straight margins
+
+
+% title on top of the document
+\maintitle {\Huge {\centerline{\textbf{ Kumar Shubham}}}}
+
+\nobreakvspace{0.3em}  % add some page break averse vertical spacing
+
+% \noindent prevents paragraph's first lines from indenting
+% \mbox is used to obfuscate the email address
+% \sbull is a spaced bullet
+% \href well..
+% \\ breaks the line into a new paragraph
+\centerline{\noindent
+\textsmaller{+}919790717731\sbull
+\href{mailto:kumarshubham347@gmail.com}{Mail}\sbull
+\href{https://github.com/krshubham}{Github} \sbull
+\href{http://www.linkedin.com/in/krshubham1708}{Linkedin}\sbull
+\href{https://krshubham.github.io}{Portfolio}}
+\\
+\large{\centerline{ \textit{{Move fast and break Things! If !(breaking) then !(fast)}}}}
+
+\spacedhrule{0.9em}{-0.4em}  % a horizontal line with some vertical spacing before and after
+
+\roottitle{Education}
+
+\headedsection
+  {Vellore Institute of Technology}
+  {\textsc{Chennai, India}} {%
+  \headedsubsection
+    {B.Tech, Computer Science}
+    {2015 -- Present}
+    {\begin{itemize}
+        \item CGPA : 8.53/10 (After 2 semesters)
+    \end{itemize}}
+}
+
+
+\spacedhrule{0em}{-0.4em}
+
+\roottitle{Projects Developed}
+
+\headedsection
+  {\href{https://github.com/krshubham/codeslam}{Codeslam}}
+  {\textsc{}}
+  {\headedsubsection
+        {Project Developer}
+        {Oct 2016- Nov 2016}
+        {
+        \begin{itemize}
+            \item {Web application for organizing programming workshops.}
+            \item {Completely based on MEAN stack and RESTful practices.}
+            \item {Built as a project for the Internet and Web Programming Cours.e}
+        \end{itemize}
+        }
+    }
+    
+    \headedsection
+  {\href{http://technovitchennai.com}{TechnoVIT Chennai}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Front end Lead}
+    {Aug 2016- Sep 2016}
+    {
+        \begin{itemize}
+            \item {Website for the annual Technical fest of VIT Chennai.}
+            \item {Tech Stack: HTML,CSS,Google MDL, Responsive Web Design.}
+            \item {Assisted team mates with version control systems like Git.}
+            \item {Guide: Prof. Christy Jackson}
+        \end{itemize}
+        }
+}
+
+\headedsection
+  {\href{http://krshubham.github.io/vibrance}{Vibrance VIT Chennai}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Technical and Front end lead}
+    {Feb 2016- March 2016}
+    {
+        \begin{itemize}
+            \item {Website for the annual Cultural fest of VIT Chennai}
+ .           \item {Tech Stack: HTML,CSS,Javascript,Jquery}
+ .           \item {Guide: Prof. Subbulakshmi T}
+.        \end{itemize}
+        }
+}
+
+\vspace{-0.2em}
+\begin{center}
+  \emph{}
+\end{center}
+
+
+\spacedhrule{-0.2em}{-0.4em}
+
+\roottitle{\textbf{Skills and Activities}}
+\headedsection
+  {\textbf{Technical:}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Web Application development}
+    {}
+    {\begin{itemize}
+        \item {Front end: HTML5, CSS,JavaScript ES6,AngularJs, jQuery.}
+        \item {Server side: Node with ExpressJs,MongoDB.}
+        \item {DevOps: Parse,Selenium,AWS,Git.}
+    \end{itemize}}
+    \headedsubsection
+    {Programming}
+    {}
+    {\begin{itemize}
+        \item Familiar:Python(Flask), Java(JSP).
+    \end{itemize}}
+}
+
+\headedsection
+  {\textbf {Activities and awards:}}
+  {\textsc{}} {%
+  \headedsubsection
+    {Open Source Contributions }
+    {}
+    {\begin{itemize}
+        \item First prize on FOSS day for presenting a CNS system for drones with a team of 3.
+    \end{itemize}}
+    \headedsubsection
+    {College Events}
+    {}
+    {\begin{itemize}
+        \item First prize at Intra college Linux Quiz(2015).
+        \item {Organizer and developer of the event and online platform respectively to spread coding culture in the college(2016).}
+    \end{itemize}}
+}
+
+\headedsection
+  {\textbf {Interests: }}
+  {\textsc{}} {%
+  \headedsubsection
+    {Music to Academics:}
+    {}
+    {\begin{itemize}
+        \item {\textbf{General interests:} Solving Problems, competitive coding,making automation scripts.}
+        \item {\textbf{Course interests:} Programming,Compilers, Machine Learning, Artificial Intelligence,DBMS.}
+        \item {\textbf{Free time:} EDM, Reading gadget reviews and watching dev conferences.}
+        }
+    \end{itemize}
+    }
+}
+
+\end{document}
+
+＀
